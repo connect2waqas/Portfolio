@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Waqas – AI Engineer portfolio showcasing machine learning projects, skills, and experience." />
+  <title>Waqas | AI Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Waqas<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Waqas</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-description">
+        I build intelligent systems that turn complex data into real-world impact.
+        Passionate about machine learning, deep learning, and the future of AI.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about" aria-label="Scroll to about section">
+          <div class="scroll-indicator"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-image-placeholder">
+            <span>W</span>
+          </div>
+          <div class="about-badge">AI Engineer</div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm an <strong>AI Engineer</strong> with a deep passion for building
+            intelligent, scalable solutions. I specialize in machine learning,
+            natural language processing, and computer vision — turning ambitious
+            ideas into production-ready AI systems.
+          </p>
+          <p>
+            My work spans the full ML lifecycle: from data exploration and model
+            training to deployment and monitoring. I enjoy working at the
+            intersection of research and engineering to create products that
+            genuinely move the needle.
+          </p>
+          <p>
+            When I'm not training models, I'm exploring the latest advancements
+            in large language models, contributing to open-source projects, and
+            sharing what I learn with the community.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <p class="section-subtitle">Technologies I work with every day</p>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>Machine Learning</h3>
+          <ul>
+            <li>Supervised &amp; Unsupervised Learning</li>
+            <li>Deep Learning (CNN, RNN, Transformers)</li>
+            <li>Reinforcement Learning</li>
+            <li>Model Optimization &amp; Deployment</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <h3>NLP &amp; LLMs</h3>
+          <ul>
+            <li>Large Language Models (GPT, BERT)</li>
+            <li>Fine-tuning &amp; Prompt Engineering</li>
+            <li>RAG Pipelines</li>
+            <li>LangChain &amp; LlamaIndex</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">👁️</div>
+          <h3>Computer Vision</h3>
+          <ul>
+            <li>Object Detection &amp; Segmentation</li>
+            <li>Image Classification</li>
+            <li>OpenCV &amp; YOLO</li>
+            <li>Video Analytics</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>MLOps &amp; Infra</h3>
+          <ul>
+            <li>MLflow, DVC, W&amp;B</li>
+            <li>Docker &amp; Kubernetes</li>
+            <li>AWS / GCP / Azure</li>
+            <li>CI/CD for ML pipelines</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <h3>Programming</h3>
+          <ul>
+            <li>Python (PyTorch, TensorFlow)</li>
+            <li>SQL &amp; NoSQL Databases</li>
+            <li>REST APIs (FastAPI, Flask)</li>
+            <li>JavaScript / TypeScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <h3>Data Engineering</h3>
+          <ul>
+            <li>Data Pipelines (Airflow, Spark)</li>
+            <li>Feature Engineering</li>
+            <li>Pandas, NumPy, Polars</li>
+            <li>Data Visualization</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A selection of work I'm proud of</p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🔍</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub repository" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI-Powered Document Q&amp;A</h3>
+          <p class="project-description">
+            A RAG-based system that lets users upload documents and ask questions
+            in natural language. Built with LangChain, OpenAI GPT-4, and
+            a vector database for semantic search.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>LangChain</span><span>GPT-4</span><span>FastAPI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">👁️</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub repository" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Real-Time Object Detection System</h3>
+          <p class="project-description">
+            Production-grade computer vision pipeline using YOLOv8 for real-time
+            object detection in video streams. Deployed on edge hardware with
+            sub-50ms latency.
+          </p>
+          <div class="project-tags">
+            <span>PyTorch</span><span>YOLOv8</span><span>OpenCV</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">📈</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub repository" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">ML-Driven Predictive Analytics</h3>
+          <p class="project-description">
+            End-to-end predictive analytics platform for business forecasting.
+            Automated feature engineering, model selection, and explainability
+            dashboards using SHAP.
+          </p>
+          <div class="project-tags">
+            <span>Scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Streamlit</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">💬</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub repository" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Conversational AI Chatbot</h3>
+          <p class="project-description">
+            Multi-turn conversational AI for customer support automation. Fine-tuned
+            a domain-specific LLM with RLHF, achieving 92% intent classification
+            accuracy.
+          </p>
+          <div class="project-tags">
+            <span>Transformers</span><span>RLHF</span><span>AWS</span><span>React</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        Have a project in mind or just want to chat? I'd love to hear from you.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:connect2waqas@example.com">connect2waqas@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/connect2waqas" target="_blank" rel="noopener noreferrer">linkedin.com/in/connect2waqas</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/connect2waqas" target="_blank" rel="noopener noreferrer">github.com/connect2waqas</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message ✉️</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>
+        <span class="logo-bracket">&lt;</span>Waqas<span class="logo-bracket">/&gt;</span>
+        &nbsp;·&nbsp; AI Engineer
+      </p>
+      <p class="footer-copy">© <span id="year"></span> Waqas. Built with ❤️ and lots of ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
